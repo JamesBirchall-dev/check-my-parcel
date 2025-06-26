@@ -28,7 +28,7 @@ app.post('/get-shipping-rates', async (req, res) => {
     console.error("Easyship API error:", err);
     res.status(500).json({ error: 'Failed to fetch shipping rates' });
   }
-});
+;
 
 app.listen(PORT, () => {
   console.log(Server running on port ${PORT});
